@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="bjui-pageContent" style="top: 0px; bottom: 28px;">
+    <form action="/boss/system/sys/updateSys" data-toggle="validate" method="post" class="nice-validator n-red" novalidate="novalidate">
+        <input type="hidden" name="id" value="1">
+        <fieldset>
+            <legend>视频存储信息</legend>
+            <div class="form-group">
+                <label for="isShowService" class="control-label x150">视频存储平台：</label>
+                <div class="iradio_minimal-purple checked" data-icheck="videoType" style="position: relative;"><input type="radio" id="videoType1" class="videoType" name="videoType" value="1" checked="" data-toggle="icheck" data-label="" size="20" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="videoType1" class="ilabel" data-icheck="videoType">保利威视</label>
+                <div class="iradio_minimal-purple" data-icheck="videoType" style="position: relative;"><input type="radio" id="videoType2" class="videoType" name="videoType" value="2" data-toggle="icheck" data-label="" size="20" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="videoType2" class="ilabel" data-icheck="videoType">七牛</label>
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="control-label x150">useid：</label>
+                <input type="text" name="polyvUseid" value="********" placeholder="useid" size="40" class="form-control" style="width: 400px;">
+                <label class="control-label x150">secretkey：</label>
+                <input type="text" name="polyvSecretkey" value="********" placeholder="secretkey" size="40" class="form-control" style="width: 400px;">
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="control-label x150">readtoken：</label>
+                <input type="text" name="polyvReadtoken" value="********" placeholder="readtoken" size="40" class="form-control" style="width: 400px;">
+                <label class="control-label x150">writetoken：</label>
+                <input type="text" name="polyvWritetoken" value="********" placeholder="writetoken" size="40" class="form-control" style="width: 400px;">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>文件存储信息</legend>
+            <div class="form-group">
+                <label for="isShowService" class="control-label x150">文件存储类型：</label>
+                <div class="iradio_minimal-purple checked" data-icheck="fileType" style="position: relative;"><input type="radio" id="fileType1" name="fileType" value="1" checked="" data-toggle="icheck" data-label="" size="20" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="fileType1" class="ilabel" data-icheck="fileType">阿里云</label>
+                <div class="iradio_minimal-purple" data-icheck="fileType" style="position: relative;"><input type="radio" id="fileType2" name="fileType" value="2" data-toggle="icheck" data-label="" size="20" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="fileType2" class="ilabel" data-icheck="fileType">七牛</label>
+                <div class="iradio_minimal-purple" data-icheck="fileType" style="position: relative;"><input type="radio" id="fileType3" name="fileType" value="3" data-toggle="icheck" data-label="" size="20" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="fileType3" class="ilabel" data-icheck="fileType">本地</label>
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="control-label x150">accessKeyId：</label>
+                <input type="text" name="aliyunAccessKeyId" value="********" placeholder="accessKeyId" size="40" class="form-control" style="width: 400px;">
+                <label class="control-label x150">accessKeySecret：</label>
+                <input type="text" name="aliyunAccessKeySecret" value="********" placeholder="accessKeySecret" size="40" class="form-control" style="width: 400px;">
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="control-label x150">ossUrl：</label>
+                <input type="text" name="aliyunOssUrl" value="********" placeholder="ossUrl" size="40" class="form-control" style="width: 400px;">
+                <label class="control-label x150">ossBucket：</label>
+                <input type="text" name="aliyunOssBucket" value="********" placeholder="ossBucket" size="40" class="form-control" style="width: 400px;">
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="control-label x150">smsCode：</label>
+                <input type="text" name="smsCode" value="********" placeholder="smsCode" size="40" class="form-control" style="width: 400px;">
+                <label class="control-label x150">短信签名：</label>
+                <input type="text" name="signName" value="********" placeholder="signName" size="40" class="form-control" style="width: 400px;">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>支付通道信息</legend>
+            <div class="form-group">
+                <label for="isShowService" class="control-label x150">支付通道：</label>
+                <div class="iradio_minimal-purple checked" data-icheck="payType" style="position: relative;"><input type="radio" id="payType1" name="payType" value="1" checked="" data-toggle="icheck" data-label="" size="20" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="payType1" class="ilabel" data-icheck="payType">龙果支付</label>
+                <div class="iradio_minimal-purple" data-icheck="payType" style="position: relative;"><input type="radio" id="payType2" name="payType" value="2" data-toggle="icheck" data-label="" size="20" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="payType2" class="ilabel" data-icheck="payType">其他</label>
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="control-label x150">payKey：</label>
+                <input type="text" name="payKey" value="********" placeholder="roncooKey" size="40" class="form-control" style="width: 400px;">
+                <label class="control-label x150">paySecret：</label>
+                <input type="text" name="paySecret" value="********" placeholder="roncooSecret" size="40" class="form-control" style="width: 400px;">
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="control-label x150">支付请求：</label>
+                <input type="text" name="payUrl" value="********" placeholder="payUrl" size="40" class="form-control" style="width: 400px;">
+                <label class="control-label x150">回调地址：</label>
+                <input type="text" name="notifyUrl" value="********" placeholder="notifyUrl" size="40" class="form-control" style="width: 400px;">
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
